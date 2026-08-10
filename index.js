@@ -156,7 +156,7 @@ playBtn.addEventListener("click", () => {
             playerCard.classList.add("mini"); 
             
             clearInterval(chatInterval);
-            chatInterval = setInterval(spawnChat, 1500);
+            chatInterval = setInterval(spawnChat, 4000); // Diubah menjadi 4 detik sekali
             
             setTimeout(() => {
                 currentIndex = 0; 
@@ -168,7 +168,7 @@ playBtn.addEventListener("click", () => {
             audio.play();
             playIcon.textContent = "pause";
             clearInterval(chatInterval);
-            chatInterval = setInterval(spawnChat, 1500);
+            chatInterval = setInterval(spawnChat, 4000); // Diubah menjadi 4 detik sekali
         }
         isPlaying = true;
     } else {
@@ -266,34 +266,3 @@ function triggerPhotoSteal(index, isFirst = false) {
     
     isFrame1Active = !isFrame1Active;
 }
-
-// =========================================
-// INISIALISASI LOTTIE JSON
-// =========================================
-
-// 1. Kotak Biru (Kanan Atas)
-lottie.loadAnimation({
-    container: document.getElementById('lottie-digital-love'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: "DigitalLove.json"
-});
-
-// 2. Kotak Hijau (Kiri Bawah) - Sudah diturunkan
-lottie.loadAnimation({
-    container: document.getElementById('lottie-dancing'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: "Valentine's Day Love Dancing.json"
-});
-
-// 3. Garis Ungu (Bawah menjalar)
-lottie.loadAnimation({
-    container: document.getElementById('lottie-particles-bottom'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: "Heart Particles.json" 
-});
