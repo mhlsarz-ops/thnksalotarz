@@ -234,8 +234,7 @@ const playIcon = document.getElementById("play-icon");
 const creditWrapper = document.getElementById("credit-wrapper");
 const creditTextElement = document.getElementById("credit-text");
 const walkingGif = document.getElementById("walking-gif");
-// NAMA PEMBUAT DIPERBARUI DI SINI
-const creditString = "created by @thnksalotarz";
+const creditString = "created by @mhlsarz";
 
 let charIndex = 0;
 const frame1 = document.getElementById("frame-1");
@@ -320,10 +319,7 @@ function buildPuzzle(container, imgSrc) {
     }
 }
 
-// DIMATIKAN DENGAN RETURN
 function spawnChat() {
-    return; // MENGHENTIKAN EFEK CHAT MELAYANG
-    
     if (!isPlaying) return;
     
     const chatSrc = chatImages[Math.floor(Math.random() * chatImages.length)];
