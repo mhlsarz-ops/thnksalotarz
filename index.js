@@ -234,7 +234,7 @@ const playIcon = document.getElementById("play-icon");
 const creditWrapper = document.getElementById("credit-wrapper");
 const creditTextElement = document.getElementById("credit-text");
 const walkingGif = document.getElementById("walking-gif");
-const creditString = "Created by Nofanadi, assisted by Gemini";
+const creditString = "Created by mhlsarz";
 
 let charIndex = 0;
 const frame1 = document.getElementById("frame-1");
